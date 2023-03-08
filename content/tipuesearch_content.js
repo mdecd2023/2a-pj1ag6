@@ -1,1 +1,1 @@
-var tipuesearch = {"pages": [{'title': 'About', 'text': 'cmsimde_site', 'tags': '', 'url': 'About.html'}]};
+var tipuesearch = {"pages": [{'title': 'About', 'text': '第六組 \n 組長: 41023104 呂佳柔 ， 組員：41023112 王啟騰 \n 網頁\xa0 https://mdecd2023.github.io/2a-pj1ag6/content/index.html \xa0 \n 倉儲\xa0 https://github.com/mdecd2023/2a-pj1ag6 \xa0', 'tags': '', 'url': 'About.html'}]};
