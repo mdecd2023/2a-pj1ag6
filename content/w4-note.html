@@ -141,81 +141,23 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Portable Python << <a href='Portable Python.html'>Previous</a> <a href='協同設計.html'>Next</a> >> 協同設計<br /><h1>tutorial1</h1>
-<p><a href="./../downloads/bubbleRob.xml">bubbleRob圖檔</a></p>
-<p>以CoppeliaSim模擬兩球碰撞</p>
-<script>
-var winkVideoData_40923151 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923151" height="630" muted="true" width="1008">
-<source src="./../downloads/泡泡球作業一.mp4" type="video/mp4"/></video></div>
-<p></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/TsbSoQ1ARdk" title="YouTube video player" width="560"></iframe></p>
-<p>BubbleRob</p>
-<script>
-var winkVideoData_40923152 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923152" height="630" muted="true" width="1008">
-<source src="./../downloads/bubblerob-1.mp4" type="video/mp4"/></video></div>
-<p>附在bubbleRob身體上的接近傳感器</p>
-<script>
-var winkVideoData_40923153 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923153" height="630" muted="true" width="1008">
-<source src="./../downloads/bubblerob-joint.mp4" type="video/mp4"/></video></div>
-<p>接近傳感器、電機和輪子</p>
-<script>
-var winkVideoData_40923154 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923154" height="630" muted="true" width="1008">
-<source src="./../downloads/泡泡球1.mp4" type="video/mp4"/></video></div>
-<div class="winkVideoContainerClass"></div>
-<script>
-var winkVideoData_40923155 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923155" height="630" muted="true" width="1008">
-<source src="./../downloads/泡泡球字幕版.mp4" type="video/mp4"/></video></div>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/GfuRt2H0HQ4" title="YouTube video player" width="560"></iframe></p><br />Portable Python << <a href='Portable Python.html'>Previous</a> <a href='協同設計.html'>Next</a> >> 協同設計</div>
+    <div id="tipue_search_content">w3 << <a href='w3.html'>Previous</a> <a href='Dynamic site.html'>Next</a> >> Dynamic site<br /><h1>w4-note</h1>
+<p><strong>1.在泡泡球機器人中使用何種程式碼?</strong></p>
+<p>Lua語言。由巴西里約熱內盧天主教大學的一個研究團隊所開發，使用了 V-REP 仿真軟件中的 API ，是一種輕量級、高效、可擴展的腳本語言，被廣泛用於遊戲開發、嵌入式系統、Web應用、科學計算等領域。</p>
+<p><b><span><img alt="" height="211" src="./../images/Lua.png" width="744"/></span></b></p>
+<p><b>2.這段 Lua 程式碼中哪一行是控制泡泡球機器人運行的間距 ?</b></p>
+<p>第18行中 clearance 為間隙，單位是 meter 公尺。</p>
+<p><b><img alt="" height="143" src="./../images/間距.png" width="1062"/></b></p>
+<p><b>3..在 CoppeliaSim 中，scene 與 model 有何不同 ?</b></p>
+<p>兩者都是表示場景中的物體，但一個 scene 中可以有多個 model ，一個 model 卻只屬於一個 scene。</p>
+<p>scene 通常代表模擬仿真場景，例如：燈光、物體、傳感器、環境等等。</p>
+<p>model 代表單獨一個物體，例如：機器人、物體、傳感器等等，通常包含自身的屬性、位置、旋轉、網格模型等等特性。</p>
+<p><b><img alt="" height="351" src="./../images/scene model .png" width="744"/></b></p>
+<p><b>4..在 CoppeliaSim scene 中，何謂 clean model ?</b></p>
+<p>clean model 是一個工具，可以刪除未使用的對象和場景元素，壓縮模型文件大小，將模型的場景數據進行優化和精簡，從而提高模擬效率。在 CoppeliaSim 中通過點擊 File &gt; Clean Model 打開 Clean Model 工具。</p>
+<p><img alt="" height="352" src="./../images/scene model .png" width="746"/></p>
+<p><b>5..CoppeliaSim 的 .ttt 檔案格式與 .simscene.xml 檔案格式有何不同 ?</b></p>
+<p><b></b></p><br />w3 << <a href='w3.html'>Previous</a> <a href='Dynamic site.html'>Next</a> >> Dynamic site</div>
         
     <!-- footer -->
       <div class="container">
