@@ -7,13 +7,14 @@
 <p>week1 加入 teams 課程，建立 resume-github 帳號倉儲，分組協同專案 2a-pj1agx</p>
 <p>week2 228連假</p>
 <p>week3 建立靜態網站</p>
-<p>week4 b<span>ubbleRub tutorial 製作</span></p><h1>w3</h1>
+<p>week4 b<span>ubbleRub tutorial 製作</span></p>
+<p><span>week5 建立Tcexam考試帳號</span></p><h1>w3</h1>
 <p>w3 - 2023.03.10.16 已經完成分組網頁者，可以得到分組網頁評分</p>
 <p>w3 - 請各組寫一個程式判定 2a 哪一組已經完成網頁建置.</p>
 <p>w3 開始執行<span> </span><a href="https://mde.tw/pjcopsim/content/bubbleRobTutorial.html">https://mde.tw/pjcopsim/content/bubbleRobTutorial.html</a></p>
 <p>星期四補課時間， 要驗收 Tutorial1 (心得，展示頁面說明各組員所完成項目，說明該組的專案規劃)</p>
 <p>甲班Github帳號 <a href="https://gist.githubusercontent.com/CHIA-ROU/8ea54ac07955a6b26b63e343c17f3097/raw/1e6977f5e593f374f6545cc5282c01277674e97e/2a.txt">2a.txt</a></p>
-<h1>w4-note</h1>
+<h1>CoppeliaSim-note</h1>
 <p><strong>1.在泡泡球機器人中使用何種程式碼?</strong></p>
 <p>Lua語言。由巴西里約熱內盧天主教大學的一個研究團隊所開發，使用了 V-REP 仿真軟件中的 API ，是一種輕量級、高效、可擴展的腳本語言，被廣泛用於遊戲開發、嵌入式系統、Web應用、科學計算等領域。</p>
 <p><b><span><img alt="" height="211" src="/images/Lua.png" width="744"/></span></b></p>
@@ -28,9 +29,8 @@
 <p><b>4..在 CoppeliaSim scene 中，何謂 clean model ?</b></p>
 <p>clean model 是一個工具，可以刪除未使用的對象和場景元素，壓縮模型文件大小，將模型的場景數據進行優化和精簡，從而提高模擬效率。在 CoppeliaSim 中通過點擊 File &gt; Clean Model 打開 Clean Model 工具。</p>
 <p><img alt="" height="352" src="/images/scene model .png" width="746"/></p>
-<p><b>5..CoppeliaSim 的 .ttt 檔案格式與 .simscene.xml 檔案格式有何不同 ?</b></p>
-<h1>Projects</h1>
-<p><b></b></p><h1>Dynamic site</h1>
+<p><b>5..CoppeliaSim 的 .ttt 檔案格式與 .simscene.xml 檔案格式有何不同 ?</b></p><h1>Projects</h1>
+<p>課程內容</p><h2>Dynamic site</h2>
 <ol>
 <li>
 <p class="_04xlpA direction-ltr align-start para-style-body"><span class="S1PPyQ">下載 portable_python 以 startIpv6 開啟小黑窗，變更到需要的資料夾</span><span class="S1PPyQ">(後退cd..，更換資料夾:，結束ctrl c)</span></p>
@@ -44,7 +44,7 @@
 <li>建立 token <span>放入 .git/config 中的 URL﹑加上@，就可直接在動態網頁中進行改版</span></li>
 <li><span>以 generate_pages 轉為靜態後, 直接以 acp 進行 git add, commit 與 push</span></li>
 </ol>
-<h1>Portable Python</h1>
+<h2>Portable Python</h2>
 <p>自製 Portable Python 流程 (可以隨身, 可以啟動不同權限, 可以配置不同模組)</p>
 <script>
 var winkVideoData_40923151 = {
@@ -59,6 +59,36 @@ var winkVideoData_40923151 = {
 <!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
 <div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923151" height="630" muted="true" width="1008">
 <source src="/downloads/how to create python portable.mp4" type="video/mp4"/></video></div>
+<h2>Wink3</h2>
+<div>動態頁面嵌入 Wink 影片的 html</div>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;script&gt;// &lt;![CDATA[
+var winkVideoData_40923151 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+// ]]&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;!-- 接下來將 mp4 檔案從 downloads 目錄取出 --&gt;
+&lt;div class="winkVideoContainerClass"&gt;&lt;video width="1008" height="630" autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923151" muted="true"&gt;
+&lt;source src="/downloads/w10_cube.mp4" type="video/mp4" /&gt;&lt;/video&gt;&lt;/div&gt;</pre>
+<p>以下為示範影片</p>
+<script>
+var winkVideoData_40923151 = {
+  dataVersion: 1,
+  frameRate: 10,
+  buttonFrameLength: 5,
+  buttonFrameOffset: 2,
+  frameStops: {
+  },
+};
+</script>
+<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
+<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923151" height="630" muted="true" width="1008">
+<source src="/downloads/wink3 video.mp4" type="video/mp4"/></video></div>
 <h1>tutorial1</h1>
 <p><a href="/downloads/bubbleRob.xml">bubbleRob圖檔</a></p>
 <p>以CoppeliaSim模擬兩球碰撞</p>
@@ -134,36 +164,7 @@ var winkVideoData_40923155 = {
 <div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923155" height="630" muted="true" width="1008">
 <source src="/downloads/泡泡球字幕版.mp4" type="video/mp4"/></video></div>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/GfuRt2H0HQ4" title="YouTube video player" width="560"></iframe></p>
-<h1>Wink3</h1>
-<div>動態頁面嵌入 Wink 影片的 html</div>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;script&gt;// &lt;![CDATA[
-var winkVideoData_40923151 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-// ]]&gt;&lt;/script&gt;
-&lt;/p&gt;
-&lt;!-- 接下來將 mp4 檔案從 downloads 目錄取出 --&gt;
-&lt;div class="winkVideoContainerClass"&gt;&lt;video width="1008" height="630" autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923151" muted="true"&gt;
-&lt;source src="/downloads/w10_cube.mp4" type="video/mp4" /&gt;&lt;/video&gt;&lt;/div&gt;</pre>
-<p>以下為示範影片</p>
-<script>
-var winkVideoData_40923151 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923151" height="630" muted="true" width="1008">
-<source src="/downloads/wink3 video.mp4" type="video/mp4"/></video></div><h1>協同設計</h1>
+<h1>協同設計</h1>
 <p><strong>要點：</strong></p>
 <ol>
 <li>參與協同者能否<span style="background-color: #ffff99;">同步並發</span>執行所被交付的內容</li>
