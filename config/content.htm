@@ -100,7 +100,14 @@ var winkVideoData_40923151 = {
 <!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
 <div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="/static" data-varname="winkVideoData_40923151" height="630" muted="true" width="1008">
 <source src="/downloads/wink3 video.mp4" type="video/mp4"/></video></div>
-<h2>SciTE</h2><h1>tutorial1</h1>
+<h2>SciTE</h2>
+<p>在 week6 時於 SciTE 執行 simpleTest_19997.py，發現 CoppeliaSim 文字區並未顯示"這個 Python remote API 將會連續執行 1 秒鐘, 歡迎進入 CoppeliaSim 的虛擬世界!"，且該文字在 SciTE 中顯示為亂碼</p>
+<p>解決方法:</p>
+<p><span>由於 SciTE 預設似乎是採用西方語言編碼的，會把一中文字元視為兩個單位元組字元，才會呈現亂碼。</span></p>
+<p>SciTE -&gt; Option -&gt; Open User Options File。在裡面新增：</p>
+<p><span style="background-color: #ffff99;">code.page=65001</span></p>
+<p><span style="background-color: #ffff99;">output.code.page=65001</span></p>
+<p>save</p><h1>tutorial1</h1>
 <p><a href="/downloads/bubbleRob.xml">bubbleRob圖檔</a></p>
 <p>以CoppeliaSim模擬兩球碰撞</p>
 <script>

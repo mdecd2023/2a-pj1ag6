@@ -141,7 +141,14 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Wink3 << <a href='Wink3.html'>Previous</a> <a href='tutorial1.html'>Next</a> >> tutorial1<br /><h1>SciTE</h1><br />Wink3 << <a href='Wink3.html'>Previous</a> <a href='tutorial1.html'>Next</a> >> tutorial1</div>
+    <div id="tipue_search_content">Wink3 << <a href='Wink3.html'>Previous</a> <a href='tutorial1.html'>Next</a> >> tutorial1<br /><h1>SciTE</h1>
+<p>在 week6 時於 SciTE 執行 simpleTest_19997.py，發現 CoppeliaSim 文字區並未顯示"這個 Python remote API 將會連續執行 1 秒鐘, 歡迎進入 CoppeliaSim 的虛擬世界!"，且該文字在 SciTE 中顯示為亂碼</p>
+<p>解決方法:</p>
+<p><span>由於 SciTE 預設似乎是採用西方語言編碼的，會把一中文字元視為兩個單位元組字元，才會呈現亂碼。</span></p>
+<p>SciTE -&gt; Option -&gt; Open User Options File。在裡面新增：</p>
+<p><span style="background-color: #ffff99;">code.page=65001</span></p>
+<p><span style="background-color: #ffff99;">output.code.page=65001</span></p>
+<p>save</p><br />Wink3 << <a href='Wink3.html'>Previous</a> <a href='tutorial1.html'>Next</a> >> tutorial1</div>
         
     <!-- footer -->
       <div class="container">
