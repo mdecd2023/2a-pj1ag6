@@ -197,10 +197,16 @@ var winkVideoData_40923155 = {
 <li><span style="color: #0000ff;">newVal <span style="color: #000000;">表示控制元件的新值，即使用者設置的新值。</span></span><span style="color: #0000ff;"><span style="color: #000000;"></span></span></li>
 </ol>
 <p><span style="color: #0000ff;"><span style="color: #000000;"><span>在函數內部，程式碼會使用一個數組 minMaxSpeed 計算新的速度值<span>，其中 </span><span style="color: #0000ff;">minMaxSpeed[1]</span><span> 表示速度的最小值，</span><span style="color: #0000ff;">minMaxSpeed[2]</span><span> 表示速度的最大值。然後根據控制元件的新值 </span>newVal<span>，通過簡單的線性插值計算出新的速度值，並將其存儲在 </span>speed<span> 變數中。</span></span></span></span></p>
-<p><span style="color: #0000ff; background-color: #ffff00;"><span style="color: #000000;">用於根據 UI 中的控制元件值的改變，動態調整程式中的速度變數。</span></span></p>
+<p><span style="color: #0000ff; background-color: #ffff00;"><span style="color: #000000;">用於根據 ui 中的控制元件值的改變，動態調整程式中的速度變數。</span></span></p>
 <p><img alt="" height="508" src="/images/sysCall_init.png" width="1431"/></p>
 <p><span style="color: #0000ff;">sysCall_init()</span><span> 函數執行於模擬場景開始運行時，</span><span class="Y2IQFc" lang="zh-TW">只執行一次，且是第一次執行這個腳本。</span></p>
-<p><span class="Y2IQFc" lang="zh-TW"><span>通過 </span><span style="color: #0000ff;">sim.getObject()</span><span> 函數獲取 BubbleRob 模型的不同元件的句柄，並且將它們存儲到相應的變量中。</span></span></p><h1>pj1</h1>
+<p><span class="Y2IQFc" lang="zh-TW"><span>通過 </span><span style="color: #0000ff;">sim.getObject()</span><span> 函數獲取 BubbleRob 模型的不同元件的句柄，並且將它們存儲到相應的變量中。</span></span></p>
+<p><span style="color: #0000ff;">bubbleRobBase=sim.getObject('.')</span> 獲取 BubbleRob 模型的基座物件的句柄，即 BubbleRob 的根物件。</p>
+<p><span style="color: #0000ff;">leftMotor=sim.getObject("./leftMotor")</span> 獲取 BubbleRob 模型中左側馬達的句柄。</p>
+<p><span style="color: #0000ff;">rightMotor=sim.getObject("./rightMotor")</span> 獲取 BubbleRob 模型中右側馬達的句柄。</p>
+<p><span style="color: #0000ff;">noseSensor=sim.getObject("./sensingNose")</span> 獲取 BubbleRob 模型中前方傳感器的句柄。</p>
+<p><span style="background-color: #ffff00;">獲取物件句柄可以讓我們在後續的程式碼中控制 BubbleRob 模型的運動。</span></p>
+<p></p><h1>pj1</h1>
 <h2>w6</h2>
 <p>已<span>完成連線的分組</span></p>
 <p>ag1</p>
@@ -228,13 +234,13 @@ var winkVideoData_40923155 = {
 <p><span></span></p>
 <p></p><h1>Tcexam</h1>
 <p>2a_w6-與 cd2023 課程有關的敘述</p>
-<p><strong>T；</strong>cd2023 課程的 team code 為: 2q56a7l</p>
-<p><strong>F；</strong>cd2023 的主要課程目標是建一個六軸機械臂的模擬場景</p>
+<p><strong>T：</strong>cd2023 課程的 team code 為: 2q56a7l</p>
+<p><strong>F：</strong>cd2023 的主要課程目標是建一個六軸機械臂的模擬場景</p>
 <p>(更正)<span>主要課程目標是</span><span>開發一款能在 web-based CoppeliaSim 場景中雙方或多方對玩的遊戲產品</span></p>
-<p><strong>F；</strong>有關 cd2023 bubbleRob 場景製作練習 child script, bubbleRobBase=sim.getObject('.') 其中的 '.' 表示要取出所有場景中的物件</p>
+<p><strong>F：</strong>有關 cd2023 bubbleRob 場景製作練習 child script, bubbleRobBase=sim.getObject('.') 其中的 '.' 表示要取出所有場景中的物件</p>
 <p>(更正)<span>這行程式碼僅會獲取模型的根物體的句柄。根物體是代表機器人的物體。</span></p>
-<p><strong>T；</strong>cd2023 專案一中有關 CoppeliaSim 所製作的練習場景 robot 名稱為 bubbleRob</p>
-<p><strong>T；</strong>cd2023 中的第一個作業的倉儲名稱為 "resume-" 然後加上個人的 github 帳號</p>
+<p><strong>T：</strong>cd2023 專案一中有關 CoppeliaSim 所製作的練習場景 robot 名稱為 bubbleRob</p>
+<p><strong>T：</strong>cd2023 中的第一個作業的倉儲名稱為 "resume-" 然後加上個人的 github 帳號</p>
 <p></p>
 <p></p>
 <p>Question：</p>

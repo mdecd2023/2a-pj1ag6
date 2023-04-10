@@ -156,10 +156,16 @@ img.add_border {
 <li><span style="color: #0000ff;">newVal <span style="color: #000000;">表示控制元件的新值，即使用者設置的新值。</span></span><span style="color: #0000ff;"><span style="color: #000000;"></span></span></li>
 </ol>
 <p><span style="color: #0000ff;"><span style="color: #000000;"><span>在函數內部，程式碼會使用一個數組 minMaxSpeed 計算新的速度值<span>，其中 </span><span style="color: #0000ff;">minMaxSpeed[1]</span><span> 表示速度的最小值，</span><span style="color: #0000ff;">minMaxSpeed[2]</span><span> 表示速度的最大值。然後根據控制元件的新值 </span>newVal<span>，通過簡單的線性插值計算出新的速度值，並將其存儲在 </span>speed<span> 變數中。</span></span></span></span></p>
-<p><span style="color: #0000ff; background-color: #ffff00;"><span style="color: #000000;">用於根據 UI 中的控制元件值的改變，動態調整程式中的速度變數。</span></span></p>
+<p><span style="color: #0000ff; background-color: #ffff00;"><span style="color: #000000;">用於根據 ui 中的控制元件值的改變，動態調整程式中的速度變數。</span></span></p>
 <p><img alt="" height="508" src="./../images/sysCall_init.png" width="1431"/></p>
 <p><span style="color: #0000ff;">sysCall_init()</span><span> 函數執行於模擬場景開始運行時，</span><span class="Y2IQFc" lang="zh-TW">只執行一次，且是第一次執行這個腳本。</span></p>
-<p><span class="Y2IQFc" lang="zh-TW"><span>通過 </span><span style="color: #0000ff;">sim.getObject()</span><span> 函數獲取 BubbleRob 模型的不同元件的句柄，並且將它們存儲到相應的變量中。</span></span></p><br />tutorial1 << <a href='tutorial1.html'>Previous</a> <a href='pj1.html'>Next</a> >> pj1</div>
+<p><span class="Y2IQFc" lang="zh-TW"><span>通過 </span><span style="color: #0000ff;">sim.getObject()</span><span> 函數獲取 BubbleRob 模型的不同元件的句柄，並且將它們存儲到相應的變量中。</span></span></p>
+<p><span style="color: #0000ff;">bubbleRobBase=sim.getObject('.')</span> 獲取 BubbleRob 模型的基座物件的句柄，即 BubbleRob 的根物件。</p>
+<p><span style="color: #0000ff;">leftMotor=sim.getObject("./leftMotor")</span> 獲取 BubbleRob 模型中左側馬達的句柄。</p>
+<p><span style="color: #0000ff;">rightMotor=sim.getObject("./rightMotor")</span> 獲取 BubbleRob 模型中右側馬達的句柄。</p>
+<p><span style="color: #0000ff;">noseSensor=sim.getObject("./sensingNose")</span> 獲取 BubbleRob 模型中前方傳感器的句柄。</p>
+<p><span style="background-color: #ffff00;">獲取物件句柄可以讓我們在後續的程式碼中控制 BubbleRob 模型的運動。</span></p>
+<p></p><br />tutorial1 << <a href='tutorial1.html'>Previous</a> <a href='pj1.html'>Next</a> >> pj1</div>
         
     <!-- footer -->
       <div class="container">

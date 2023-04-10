@@ -187,6 +187,7 @@ var winkVideoData_40923155 = {
 <p><img alt="" height="197" src="/images/sysCall_vision.png" width="1217"/><span style="color: #0000ff;">sysCall_vision(inData)</span> 函數傳入一個名為 inData 的參數，用來處理視覺相關的資料。</p>
 <p>在函數內部，程式碼使用 simVision 模組提供的函數來處理視覺相關的操作，<span style="color: #0000ff;">sensorImgToWorkingImg</span> 將視覺傳感器的圖像複製到工作圖像中，<span style="color: #0000ff;">edgeDetectionOnWorking</span> 對工作圖像執行邊緣檢測，<span style="color: #0000ff;">workImgToSensorImg</span> 將工作圖像複製回視覺傳感器圖像緩衝區中。</p>
 <p><span style="color: #0000ff;">sysCall_init()</span><span> 函數是初始化函數，當程式啟動時會自動執行。但此函數目前內部為空，沒有任何操作。</span></p>
+<p><span>另外在 CoppeliaSim 中，每個場景中的物體都有一個唯一的識別符號，稱為 "句柄 <span style="color: #0000ff;">handle</span>"。handle 在計算機編程中是常用的術語，為一個整數，可以用來識別不同的物體或場景中的元件。</span></p>
 <p><span style="background-color: #ffff00;">為了處理 CoppeliaSim 中的視覺感測器的操作，並在程式初始化時執行。</span></p>
 <p><img alt="" height="96" src="/images/speedChange_callback.png" width="962"/></p>
 <p><span style="color: #0000ff;">speedChange_callback</span><span> 的函數定義了當 ui 中相應的控制元件的值發生改變時，會自動執行此函數。該函數會接收三個參數：</span></p>
@@ -195,10 +196,16 @@ var winkVideoData_40923155 = {
 <li><span style="color: #0000ff;">id <span style="color: #000000;">表示控制元件的 id，可以通過它來判斷是哪個控制元件發生了值的改變。</span></span></li>
 <li><span style="color: #0000ff;">newVal <span style="color: #000000;">表示控制元件的新值，即使用者設置的新值。</span></span><span style="color: #0000ff;"><span style="color: #000000;"></span></span></li>
 </ol>
-<p><span style="color: #0000ff;"><span style="color: #000000;"><span>在函數內部，程式碼會使用一個數組 <code>minMaxSpeed 計算新的速度值</code><span>，其中 </span><span style="color: #0000ff;"><code>minMaxSpeed[1]</code></span><span> 表示速度的最小值，</span><span style="color: #0000ff;"><code>minMaxSpeed[2]</code></span><span> 表示速度的最大值。然後根據控制元件的新值 </span><code>newVal</code><span>，通過簡單的線性插值計算出新的速度值，並將其存儲在 </span><code>speed</code><span> 變數中。</span></span></span></span></p>
-<p><span style="color: #0000ff; background-color: #ffff00;"><span style="color: #000000;">用於根據 UI 中的控制元件值的改變，動態調整程式中的速度變數。</span></span></p>
+<p><span style="color: #0000ff;"><span style="color: #000000;"><span>在函數內部，程式碼會使用一個數組 minMaxSpeed 計算新的速度值<span>，其中 </span><span style="color: #0000ff;">minMaxSpeed[1]</span><span> 表示速度的最小值，</span><span style="color: #0000ff;">minMaxSpeed[2]</span><span> 表示速度的最大值。然後根據控制元件的新值 </span>newVal<span>，通過簡單的線性插值計算出新的速度值，並將其存儲在 </span>speed<span> 變數中。</span></span></span></span></p>
+<p><span style="color: #0000ff; background-color: #ffff00;"><span style="color: #000000;">用於根據 ui 中的控制元件值的改變，動態調整程式中的速度變數。</span></span></p>
 <p><img alt="" height="508" src="/images/sysCall_init.png" width="1431"/></p>
-<p><span>是在模擬場景開始運行時執行的，通過 </span><code>sysCall_init()</code><span> 函數實現</span></p><h1>pj1</h1>
+<p><span style="color: #0000ff;">sysCall_init()</span><span> 函數執行於模擬場景開始運行時，</span><span class="Y2IQFc" lang="zh-TW">只執行一次，且是第一次執行這個腳本。</span></p>
+<p><span class="Y2IQFc" lang="zh-TW"><span>通過 </span><span style="color: #0000ff;">sim.getObject()</span><span> 函數獲取 BubbleRob 模型的不同元件的句柄，並且將它們存儲到相應的變量中。</span></span></p>
+<p><span style="color: #0000ff;">bubbleRobBase=sim.getObject('.')</span> 獲取 BubbleRob 模型的基座物件的句柄，即 BubbleRob 的根物件。</p>
+<p><span style="color: #0000ff;">leftMotor=sim.getObject("./leftMotor")</span> 獲取 BubbleRob 模型中左側馬達的句柄。</p>
+<p><span style="color: #0000ff;">rightMotor=sim.getObject("./rightMotor")</span> 獲取 BubbleRob 模型中右側馬達的句柄。</p>
+<p><span style="color: #0000ff;">noseSensor=sim.getObject("./sensingNose")</span> 獲取 BubbleRob 模型中前方傳感器的句柄。</p>
+<p><span style="background-color: #ffff00;">獲取物件句柄可以讓我們在後續的程式碼中控制 BubbleRob 模型的運動。</span></p><h1>pj1</h1>
 <h2>w6</h2>
 <p>已<span>完成連線的分組</span></p>
 <p>ag1</p>
@@ -226,13 +233,13 @@ var winkVideoData_40923155 = {
 <p><span></span></p>
 <p></p><h1>Tcexam</h1>
 <p>2a_w6-與 cd2023 課程有關的敘述</p>
-<p><strong>T；</strong>cd2023 課程的 team code 為: 2q56a7l</p>
-<p><strong>F；</strong>cd2023 的主要課程目標是建一個六軸機械臂的模擬場景</p>
+<p><strong>T：</strong>cd2023 課程的 team code 為: 2q56a7l</p>
+<p><strong>F：</strong>cd2023 的主要課程目標是建一個六軸機械臂的模擬場景</p>
 <p>(更正)<span>主要課程目標是</span><span>開發一款能在 web-based CoppeliaSim 場景中雙方或多方對玩的遊戲產品</span></p>
-<p><strong>F；</strong>有關 cd2023 bubbleRob 場景製作練習 child script, bubbleRobBase=sim.getObject('.') 其中的 '.' 表示要取出所有場景中的物件</p>
+<p><strong>F：</strong>有關 cd2023 bubbleRob 場景製作練習 child script, bubbleRobBase=sim.getObject('.') 其中的 '.' 表示要取出所有場景中的物件</p>
 <p>(更正)<span>這行程式碼僅會獲取模型的根物體的句柄。根物體是代表機器人的物體。</span></p>
-<p><strong>T；</strong>cd2023 專案一中有關 CoppeliaSim 所製作的練習場景 robot 名稱為 bubbleRob</p>
-<p><strong>T；</strong>cd2023 中的第一個作業的倉儲名稱為 "resume-" 然後加上個人的 github 帳號</p>
+<p><strong>T：</strong>cd2023 專案一中有關 CoppeliaSim 所製作的練習場景 robot 名稱為 bubbleRob</p>
+<p><strong>T：</strong>cd2023 中的第一個作業的倉儲名稱為 "resume-" 然後加上個人的 github 帳號</p>
 <p></p>
 <p></p>
 <p>Question：</p>
