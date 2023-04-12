@@ -141,37 +141,18 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Portable Python << <a href='Portable Python.html'>Previous</a> <a href='SciTE.html'>Next</a> >> SciTE<br /><h1>Wink3</h1>
-<div>動態頁面嵌入 Wink 影片的 html</div>
-<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">&lt;script&gt;// &lt;![CDATA[
-var winkVideoData_40923151 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-// ]]&gt;&lt;/script&gt;
-&lt;/p&gt;
-&lt;!-- 接下來將 mp4 檔案從 downloads 目錄取出 --&gt;
-&lt;div class="winkVideoContainerClass"&gt;&lt;video width="1008" height="630" autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923151" muted="true"&gt;
-&lt;source src="./../downloads/w10_cube.mp4" type="video/mp4" /&gt;&lt;/video&gt;&lt;/div&gt;</pre>
-<p>以下為示範影片</p>
-<script>
-var winkVideoData_40923151 = {
-  dataVersion: 1,
-  frameRate: 10,
-  buttonFrameLength: 5,
-  buttonFrameOffset: 2,
-  frameStops: {
-  },
-};
-</script>
-<!-- 接下來將 mp4 檔案從 downloads 目錄取出 -->
-<div class="winkVideoContainerClass"><video autoplay="autoplay" class="winkVideoClass" controls="controls" data-dirname="./../cmsimde/static" data-varname="winkVideoData_40923151" height="630" muted="true" width="1008">
-<source src="./../downloads/wink3 video.mp4" type="video/mp4"/></video></div>
-<br />Portable Python << <a href='Portable Python.html'>Previous</a> <a href='SciTE.html'>Next</a> >> SciTE</div>
+    <div id="tipue_search_content">SciTE << <a href='SciTE.html'>Previous</a> <a href='tutorial1.html'>Next</a> >> tutorial1<br /><h1>Git</h1>
+<p><span style="background-color: #ffff99;"><strong>同步倉儲</strong></span></p>
+<p><code>git pull</code><span> 命令用於從遠端倉儲更新本地倉儲，並自動執行 </span><code>git merge</code><span> 合併本地分支與遠端分支的變更。</span></p>
+<p>1. git add . ：<span>將當前目錄下所有變更的文件添加到 Git 暫存區（stage area）中，以便在下一次提交時包含這些變更。</span></p>
+<p>2. git commit -m "message" (message裡輸入提交的內容)：<span>編寫一個簡短的提交訊息，描述本次提交所做的變更，方便其他人閱讀和理解。</span></p>
+<p>3. git pull ：<span>將遠端倉儲的最新版本下載到本地倉儲。</span></p>
+<p>4. cms：開啟動態檢查是否同步。</p>
+<p>*執行 <code>git pull</code> 命令之前，確保當前分支沒有未提交的變更，否則 <code>git pull</code> 命令可能會失敗。如果需要保存當前分支的未提交變更，可以使用 <code>git stash</code> 命令暫存變更，等到 <code>git pull</code> 命令完成後再使用 <code>git stash apply</code> 命令恢復變更。</p>
+<p>git push 命令用於<span>將本地倉庫中的變更推送到遠端倉庫中，執行之前之前先確保本地分支和遠端分支是同步的。</span></p>
+<p>*解決合併衝突</p>
+<p><code><span face="Verdana, Arial, Helvetica, sans-serif" style="font-family: Verdana, Arial, Helvetica, sans-serif;">1. </span>git status</code> 命令查看存在衝突的文件，手動編輯文件，解決衝突。</p>
+<p>2. <code>git add</code> 和 <code>git commit</code> 命令提交變更。</p><br />SciTE << <a href='SciTE.html'>Previous</a> <a href='tutorial1.html'>Next</a> >> tutorial1</div>
         
     <!-- footer -->
       <div class="container">

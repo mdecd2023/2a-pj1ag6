@@ -9,7 +9,9 @@
 <p>week3 建立靜態網站</p>
 <p>week4 b<span>ubbleRub tutorial 製作</span></p>
 <p><span>week5 建立Tcexam考試帳號，使用 latex 範本開始製作專題報告</span></p>
-<p>week6 <span>Tcexam 小考，建立 pj1 統整協同作業</span></p><h1>w3</h1>
+<p>week6 <span>Tcexam 小考，建立 pj1 統整協同作業</span></p>
+<p><span>week7 清明連假</span></p>
+<p>week8 <span>Tcexam 小考，準備下周專題報告</span></p><h1>w3</h1>
 <p>w3 - 2023.03.10.16 已經完成分組網頁者，可以得到分組網頁評分</p>
 <p>w3 - 請各組寫一個程式判定 2a 哪一組已經完成網頁建置.</p>
 <p>w3 開始執行<span> </span><a href="https://mde.tw/pjcopsim/content/bubbleRobTutorial.html">https://mde.tw/pjcopsim/content/bubbleRobTutorial.html</a></p>
@@ -107,7 +109,19 @@ var winkVideoData_40923151 = {
 <p>SciTE -&gt; Option -&gt; Open User Options File。在裡面新增：</p>
 <p><span style="background-color: #ffff99;">code.page=65001</span></p>
 <p><span style="background-color: #ffff99;">output.code.page=65001</span></p>
-<p>save</p><h1>tutorial1</h1>
+<p>save</p>
+<h1>Git</h1>
+<p><span style="background-color: #ffff99;"><strong>同步倉儲</strong></span></p>
+<p><code>git pull</code><span> 命令用於從遠端倉儲更新本地倉儲，並自動執行 </span><code>git merge</code><span> 合併本地分支與遠端分支的變更。</span></p>
+<p>1. git add . ：<span>將當前目錄下所有變更的文件添加到 Git 暫存區（stage area）中，以便在下一次提交時包含這些變更。</span></p>
+<p>2. git commit -m "message" (message裡輸入提交的內容)：<span>編寫一個簡短的提交訊息，描述本次提交所做的變更，方便其他人閱讀和理解。</span></p>
+<p>3. git pull ：<span>將遠端倉儲的最新版本下載到本地倉儲。</span></p>
+<p>4. cms：開啟動態檢查是否同步。</p>
+<p>*執行 <code>git pull</code> 命令之前，確保當前分支沒有未提交的變更，否則 <code>git pull</code> 命令可能會失敗。如果需要保存當前分支的未提交變更，可以使用 <code>git stash</code> 命令暫存變更，等到 <code>git pull</code> 命令完成後再使用 <code>git stash apply</code> 命令恢復變更。</p>
+<p>git push 命令用於<span>將本地倉庫中的變更推送到遠端倉庫中，執行之前之前先確保本地分支和遠端分支是同步的。</span></p>
+<p>*解決合併衝突</p>
+<p><code><span face="Verdana, Arial, Helvetica, sans-serif" style="font-family: Verdana, Arial, Helvetica, sans-serif;">1. </span>git status</code> 命令查看存在衝突的文件，手動編輯文件，解決衝突。</p>
+<p>2. <code>git add</code> 和 <code>git commit</code> 命令提交變更。</p><h1>tutorial1</h1>
 <p><a href="/downloads/bubbleRob.xml">bubbleRob圖檔</a></p>
 <p>以CoppeliaSim模擬兩球碰撞</p>
 <script>
