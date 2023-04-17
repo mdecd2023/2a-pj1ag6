@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.4.10)  17 APR 2023 00:55
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.10) (preloaded format=xelatex 2023.4.10)  17 APR 2023 08:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,7 +710,26 @@ Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 LaTeX Warning: Unused global option(s):
     [14pt].
 
-No file cd_report.aux.
+(cd_report.aux
+
+LaTeX Warning: Label `1' multiply defined.
+
+
+LaTeX Warning: Label `2' multiply defined.
+
+
+LaTeX Warning: Label `3' multiply defined.
+
+
+LaTeX Warning: Label `4' multiply defined.
+
+
+LaTeX Warning: Label `5' multiply defined.
+
+
+LaTeX Warning: Label `6' multiply defined.
+
+)
 \openout1 = `cd_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
@@ -724,7 +743,7 @@ LaTeX Font Info:    ... okay on input line 60.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
 0.
-(C:\Users\u7122\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+ (C:\Users\u7122\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 60.
@@ -831,11 +850,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 \c@lstlisting=\count335
 Package hyperref Info: Link coloring OFF on input line 60.
+(cd_report.out) (cd_report.out)
 \@outlinefile=\write3
 \openout3 = `cd_report.out'.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 
 Underfull \hbox (badness 10000) detected at line 66
@@ -943,26 +960,43 @@ Underfull \hbox (badness 10000) detected at line 140
 
 [1] (abstract.tex [1
 
-]) [2]
-No file cd_report.toc.
+]) [2] (cd_report.toc
+Overfull \hbox (1.13872pt too wide) detected at line 11
+ \TU/TimesNewRoman(0)/m/n/17.28 11
+ []
+
+
+Overfull \hbox (1.77997pt too wide) detected at line 12
+ \TU/TimesNewRoman(0)/m/n/17.28 13
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `cd_report.toc'.
 
-[3
+ [3
 
-]
-No file cd_report.lof.
+] (cd_report.lof
+Overfull \hbox (0.363pt too wide) detected at line 16
+ []\TU/lmr/m/n/17.28 12
+ []
+
+)
 \tf@lof=\write5
 \openout5 = `cd_report.lof'.
 
-[4
+ [4
 
-]
-No file cd_report.lot.
+] (cd_report.lot
+Overfull \hbox (0.363pt too wide) detected at line 3
+ []\TU/lmr/m/n/17.28 11
+ []
+
+)
 \tf@lot=\write6
 \openout6 = `cd_report.lot'.
 
-(1_introduction.tex [5
+ (1_introduction.tex [5
 
 ]
 Chapter 1.
@@ -997,10 +1031,6 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 13--14
  []
 
 
-LaTeX Warning: Reference `zmq-pip install' on page 2 undefined on input line 17
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
@@ -1015,18 +1045,12 @@ Overfull \hbox (14.22635pt too wide) in paragraph at lines 22--23
  [] 
  []
 
-
-LaTeX Warning: Reference `zmq-仿真環境' on page 3 undefined on input line 26.
-
 File: ./../images//zmq-控制左右輪速度.png Graphic file (type bmp)
 <./../images//zmq-控制左右輪速度.png>
 
 Overfull \hbox (14.22635pt too wide) in paragraph at lines 29--30
  [] 
  []
-
-
-LaTeX Warning: Reference `zmq-控制左右輪速度' on page 3 undefined on input line 34.
 
 
 Overfull \hbox (107.81012pt too wide) in paragraph at lines 34--35
@@ -1042,108 +1066,102 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 [3]
-File: ./../images//zmq-聯機.png Graphic file (type bmp)
-<./../images//zmq-聯機.png>
+File: ./../images//zmq-機器人運動.png Graphic file (type bmp)
+<./../images//zmq-機器人運動.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 39--40
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 38--39
  [] 
  []
 
+File: ./../images//zmq-偵測按鍵.png Graphic file (type bmp)
+<./../images//zmq-偵測按鍵.png>
 
-LaTeX Warning: Reference `zmq-聯機' on page 4 undefined on input line 43.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 43--44
-
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 45--46
+ [] 
  []
 
 [4]
-File: ./../images//Scoreboard.png Graphic file (type bmp)
-<./../images//Scoreboard.png>
+File: ./../images//zmq-聯機.png Graphic file (type bmp)
+<./../images//zmq-聯機.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 48--49
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 54--55
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 [5]
-File: ./../images//sc-senor.png Graphic file (type bmp)
-<./../images//sc-senor.png>
+File: ./../images//Scoreboard.png Graphic file (type bmp)
+<./../images//Scoreboard.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 56--57
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 63--64
  [] 
  []
 
 
-LaTeX Warning: Reference `sc-senor' on page 6 undefined on input line 61.
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
+
+ []
+
+[6]
+File: ./../images//sc-senor.png Graphic file (type bmp)
+<./../images//sc-senor.png>
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 71--72
+ [] 
+ []
 
 File: ./../images//sc-xml.png Graphic file (type bmp)
 <./../images//sc-xml.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 64--65
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 79--80
  [] 
  []
-
-
-LaTeX Warning: Reference `sc-xml' on page 6 undefined on input line 69.
 
 File: ./../images//sc-ui.png Graphic file (type bmp)
 <./../images//sc-ui.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 72--73
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 87--88
  [] 
- []
-
-[6]
-
-LaTeX Warning: Reference `sc-ui' on page 7 undefined on input line 78.
-
-File: ./../images//sc-syscall.png Graphic file (type bmp)
-<./../images//sc-syscall.png>
-
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 81--82
- [] 
- []
-
-
-LaTeX Warning: Reference `sc-syscall' on page 7 undefined on input line 86.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
  []
 
 [7]
-File: ./../images//sc-if-else.png Graphic file (type bmp)
-<./../images//sc-if-else.png>
+File: ./../images//sc-syscall.png Graphic file (type bmp)
+<./../images//sc-syscall.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 90--91
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 96--97
  [] 
  []
 
 
-LaTeX Warning: Reference `sc-if-else' on page 8 undefined on input line 95.
+Underfull \hbox (badness 10000) in paragraph at lines 101--102
+
+ []
+
+[8]
+File: ./../images//sc-if-else.png Graphic file (type bmp)
+<./../images//sc-if-else.png>
+
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 105--106
+ [] 
+ []
 
 File: ./../images//sc-pause.png Graphic file (type bmp)
 <./../images//sc-pause.png>
 
-Overfull \hbox (14.22635pt too wide) in paragraph at lines 98--99
+Overfull \hbox (14.22635pt too wide) in paragraph at lines 113--114
  [] 
  []
 
 
-LaTeX Warning: Reference `sc-pause' on page 8 undefined on input line 103.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-) (9_reference.tex [8]
+) (9_reference.tex [9]
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 [][]\TU/TimesNewRoman(0)/m/n/14 https://towardsdatascience.com/adam-latest-tren
 ds-in-deep-learning-
@@ -1185,12 +1203,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 0972fcbc77e4ea32c5#
  []
 
-[9
+[10
 
-] [10]) (10_appendix.tex
+] [11]) (10_appendix.tex
 File: ./../images//編譯流程.png Graphic file (type bmp)
 <./../images//編譯流程.png>
- [11] [12])
+ [12] [13])
 File: ./../images//member1.png Graphic file (type bmp)
 <./../images//member1.png>
 
@@ -1270,15 +1288,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--221
 
  []
 
-[13] (cd_report.aux)
+[14] (cd_report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package rerunfilecheck Warning: File `cd_report.out' has changed.
@@ -1286,16 +1301,16 @@ Package rerunfilecheck Warning: File `cd_report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `cd_report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  ACA23CA734EB13C592A603E01FE500A5;959.
+(rerunfilecheck)             Before: ACA23CA734EB13C592A603E01FE500A5;959
+(rerunfilecheck)             After:  0862093FAF8F496150D3FC78F7F8DA4D;1002.
  ) 
 Here is how much of TeX's memory you used:
- 19553 strings out of 410532
- 380557 string characters out of 2813299
+ 19615 strings out of 410532
+ 381743 string characters out of 2813299
  954307 words of memory out of 3000000
- 40419 multiletter control sequences out of 15000+600000
- 483023 words of font info for 135 fonts, out of 8000000 for 9000
+ 40468 multiletter control sequences out of 15000+600000
+ 484977 words of font info for 143 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,17n,84p,722b,461s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-Output written on cd_report.pdf (20 pages).
+Output written on cd_report.pdf (21 pages).

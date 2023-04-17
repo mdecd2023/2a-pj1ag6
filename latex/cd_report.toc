@@ -3,11 +3,11 @@
 \contentsline {chapter}{\numberline {1}前言}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}設計架構}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}規則說明}{1}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Lua程式碼}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Lua/ Python程式碼}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Robot控制}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}聯機控制}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}記分板}{5}{section.2.3}%
-\contentsline {chapter}{參考文獻}{8}{figure.2.12}%
-\contentsline {chapter}{附錄}{11}{chapter*.4}%
-\contentsline {chapter}{作者簡介}{13}{figure.Alph0.13}%
+\contentsline {section}{\numberline {2.2}聯機控制}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}記分板}{6}{section.2.3}%
+\contentsline {chapter}{參考文獻}{9}{figure.2.14}%
+\contentsline {chapter}{附錄}{12}{chapter*.4}%
+\contentsline {chapter}{作者簡介}{14}{figure.Alph0.15}%
 \contentsfinish 

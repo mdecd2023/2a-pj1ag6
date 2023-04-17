@@ -1,4 +1,4 @@
-\chapter{Lua程式碼}
+\chapter{Lua/ Python程式碼}
 \section{Robot控制}
 \begin{figure}[hbt!]
 \begin{center}
@@ -32,6 +32,21 @@
 \end{figure}
 
 (圖.\ref{zmq-控制左右輪速度})leftWheelVelocity 和 rightWheelVelocity，分別表示左輪和右輪的速度。sim.getObject 獲取 leftMotor2 和 rightMotor2馬達物件。sim.setJointTargetVelocity 方法來設定它們的目標速度。此段程式碼可以控制機器人的移動。\\
+\newpage
+\begin{figure}[hbt!]
+\begin{center}
+\includegraphics[width=16cm]{zmq-機器人運動}
+\caption{\Large 機器人運動}\label{zmq-機器人運動}
+\end{center}
+\end{figure}
+
+\begin{figure}[hbt!]
+\begin{center}
+\includegraphics[width=16cm]{zmq-偵測按鍵}
+\caption{\Large 偵測按鍵}\label{zmq-偵測按鍵}
+\end{center}
+\end{figure}
+
 \newpage
 \section{聯機控制}
 \begin{figure}[hbt!]
